@@ -18,6 +18,8 @@ services:
         networks:
             - apinet
             - dbnet
+        depends_on:
+            - db
 
     web:
         build: ./web
@@ -25,6 +27,8 @@ services:
         networks:
             - webnet
             - apinet
+        depends_on:
+            - api
         ports:
             - "8080:80"
 
