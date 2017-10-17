@@ -1,4 +1,5 @@
 FROM node:8.2
+LABEL version="1.0" maintainer="Felix+Sebastian"
 
 ENV API_HOST "api:5000"
 ENV PORT 80
