@@ -2,7 +2,6 @@ version: "3.3"
 
 services:
     db:
-        hostname: "db"
         image: "postgres:9.6"
         restart: always
         environment:
@@ -12,17 +11,11 @@ services:
             - /home/sebastian/temp/pgdata:/var/lib/postgresql/data/pgdata
 
     api:
-        hostname: "api"
         build: ./api
         restart: always
-        links:
-            - db
 
     web:
-        hostname: "web"
         build: ./web
         restart: always
-        links:
-            - api
         ports:
             - "8080:80"
