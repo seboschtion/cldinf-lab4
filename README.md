@@ -1,4 +1,4 @@
-# CloudInf - Lab 4 - Single Docker host
+# CloudInf - Lab 5 - Single Docker host
 This repository contains nodejs code for a multi tier application. Its your job to make it runnable on a Docker host.
 
 The application overview is as follows:
